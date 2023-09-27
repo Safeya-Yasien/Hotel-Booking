@@ -86,6 +86,12 @@ header .links ul::after {
   top: calc(0% + -18px);
 }
 
+@media (min-width: 768px) {
+  header .links ul::after {
+    display: none;
+  }
+}
+
 header .links ul a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -102,6 +108,7 @@ header .links ul a:hover {
   header .links ul {
     display: none;
   }
+
   header .links i {
     display: block;
     cursor: pointer;
